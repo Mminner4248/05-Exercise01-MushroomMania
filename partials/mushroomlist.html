@@ -1,0 +1,11 @@
+<article>
+    <header><h1>List of Mushrooms</h1></header>
+
+    <section>
+        <div ng-repeat="item in items | filter:{name:searchText, edible:true}">
+          <h3>{{item.name}}</h3>
+          <h4>{{item.edible}}</h4>
+          <p>{{item.description}}</p>
+        </div>
+    </section>
+</article>
